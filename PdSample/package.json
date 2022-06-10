@@ -1,0 +1,26 @@
+{
+  "name": "pdsample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "@baiple/pose-detect": "^0.1.0",
+    "@react-native-async-storage/async-storage": "^1.17.3",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native-stack": "^6.5.2",
+    "react": "17.0.2",
+    "react-native": "0.66.4",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-native-screens": "^3.13.1",
+    "rn-fetch-blob": "^0.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "metro-react-native-babel-preset": "^0.59.0"
+  }
+}

@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E3A68AE27F1E04D00D7BD22 /* QuantizationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A689C27F1E04D00D7BD22 /* QuantizationParameters.swift */; };
+		1E3A68AF27F1E04D00D7BD22 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A689D27F1E04D00D7BD22 /* Model.swift */; };
+		1E3A68B027F1E04D00D7BD22 /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A689E27F1E04D00D7BD22 /* Tensor.swift */; };
+		1E3A68B127F1E04D00D7BD22 /* TensorFlowLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A689F27F1E04D00D7BD22 /* TensorFlowLite.swift */; };
+		1E3A68B227F1E04D00D7BD22 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A027F1E04D00D7BD22 /* Delegate.swift */; };
+		1E3A68B327F1E04D00D7BD22 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A127F1E04D00D7BD22 /* InterpreterError.swift */; };
+		1E3A68B427F1E04D00D7BD22 /* CoreMLDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A227F1E04D00D7BD22 /* CoreMLDelegate.swift */; };
+		1E3A68B527F1E04D00D7BD22 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A327F1E04D00D7BD22 /* Interpreter.swift */; };
+		1E3A68B627F1E04D00D7BD22 /* MetalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A427F1E04D00D7BD22 /* MetalDelegate.swift */; };
+		1E3A68B727F1E04D00D7BD22 /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A627F1E04D00D7BD22 /* PoseEstimator.swift */; };
+		1E3A68B827F1E04D00D7BD22 /* MoveNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A727F1E04D00D7BD22 /* MoveNet.swift */; };
+		1E3A68B927F1E04D00D7BD22 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A827F1E04D00D7BD22 /* PoseNet.swift */; };
+		1E3A68BA27F1E04D00D7BD22 /* PoseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68A927F1E04D00D7BD22 /* PoseData.swift */; };
+		1E3A68BB27F1E04D00D7BD22 /* Data+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68AA27F1E04D00D7BD22 /* Data+TFLite.swift */; };
+		1E3A68BC27F1E04D00D7BD22 /* CGSize+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68AB27F1E04D00D7BD22 /* CGSize+TFLite.swift */; };
+		1E3A68BD27F1E04D00D7BD22 /* CVPixelBuffer+TFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68AC27F1E04D00D7BD22 /* CVPixelBuffer+TFLite.swift */; };
+		1E3A68BE27F1E04D00D7BD22 /* PoseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A68AD27F1E04D00D7BD22 /* PoseConfig.swift */; };
+		1E3A68BF27F22DC100D7BD22 /* PoseDetectViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* PoseDetectViewManager.m */; };
+		1E3A68C027F22DCA00D7BD22 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A689927F1DFAB00D7BD22 /* OverlayView.swift */; };
+		1E3A68C127F22DCD00D7BD22 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3A689A27F1DFC800D7BD22 /* CameraFeedManager.swift */; };
+		F4FF95D7245B92E800C19C63 /* PoseDetectViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* PoseDetectViewManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		134814201AA4EA6300B7C361 /* libPoseDetect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPoseDetect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3A689927F1DFAB00D7BD22 /* OverlayView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		1E3A689A27F1DFC800D7BD22 /* CameraFeedManager.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; tabWidth = 2; };
+		1E3A689C27F1E04D00D7BD22 /* QuantizationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantizationParameters.swift; sourceTree = "<group>"; };
+		1E3A689D27F1E04D00D7BD22 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1E3A689E27F1E04D00D7BD22 /* Tensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
+		1E3A689F27F1E04D00D7BD22 /* TensorFlowLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorFlowLite.swift; sourceTree = "<group>"; };
+		1E3A68A027F1E04D00D7BD22 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		1E3A68A127F1E04D00D7BD22 /* InterpreterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterpreterError.swift; sourceTree = "<group>"; };
+		1E3A68A227F1E04D00D7BD22 /* CoreMLDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMLDelegate.swift; sourceTree = "<group>"; };
+		1E3A68A327F1E04D00D7BD22 /* Interpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		1E3A68A427F1E04D00D7BD22 /* MetalDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalDelegate.swift; sourceTree = "<group>"; };
+		1E3A68A627F1E04D00D7BD22 /* PoseEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		1E3A68A727F1E04D00D7BD22 /* MoveNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveNet.swift; sourceTree = "<group>"; };
+		1E3A68A827F1E04D00D7BD22 /* PoseNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		1E3A68A927F1E04D00D7BD22 /* PoseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseData.swift; sourceTree = "<group>"; };
+		1E3A68AA27F1E04D00D7BD22 /* Data+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+TFLite.swift"; sourceTree = "<group>"; };
+		1E3A68AB27F1E04D00D7BD22 /* CGSize+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+TFLite.swift"; sourceTree = "<group>"; };
+		1E3A68AC27F1E04D00D7BD22 /* CVPixelBuffer+TFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+TFLite.swift"; sourceTree = "<group>"; };
+		1E3A68AD27F1E04D00D7BD22 /* PoseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseConfig.swift; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* PoseDetectViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoseDetectViewManager.m; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* PoseDetect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PoseDetect-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4FF95D6245B92E800C19C63 /* PoseDetectViewManager.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = PoseDetectViewManager.swift; sourceTree = "<group>"; tabWidth = 2; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		134814211AA4EA7D00B7C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134814201AA4EA6300B7C361 /* libPoseDetect.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3A689827F1DCE200D7BD22 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A689A27F1DFC800D7BD22 /* CameraFeedManager.swift */,
+				1E3A689927F1DFAB00D7BD22 /* OverlayView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		1E3A689B27F1E04D00D7BD22 /* TFL */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A689C27F1E04D00D7BD22 /* QuantizationParameters.swift */,
+				1E3A689D27F1E04D00D7BD22 /* Model.swift */,
+				1E3A689E27F1E04D00D7BD22 /* Tensor.swift */,
+				1E3A689F27F1E04D00D7BD22 /* TensorFlowLite.swift */,
+				1E3A68A027F1E04D00D7BD22 /* Delegate.swift */,
+				1E3A68A127F1E04D00D7BD22 /* InterpreterError.swift */,
+				1E3A68A227F1E04D00D7BD22 /* CoreMLDelegate.swift */,
+				1E3A68A327F1E04D00D7BD22 /* Interpreter.swift */,
+				1E3A68A427F1E04D00D7BD22 /* MetalDelegate.swift */,
+			);
+			path = TFL;
+			sourceTree = "<group>";
+		};
+		1E3A68A527F1E04D00D7BD22 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				1E3A68A627F1E04D00D7BD22 /* PoseEstimator.swift */,
+				1E3A68A727F1E04D00D7BD22 /* MoveNet.swift */,
+				1E3A68A827F1E04D00D7BD22 /* PoseNet.swift */,
+				1E3A68A927F1E04D00D7BD22 /* PoseData.swift */,
+				1E3A68AA27F1E04D00D7BD22 /* Data+TFLite.swift */,
+				1E3A68AB27F1E04D00D7BD22 /* CGSize+TFLite.swift */,
+				1E3A68AC27F1E04D00D7BD22 /* CVPixelBuffer+TFLite.swift */,
+				1E3A68AD27F1E04D00D7BD22 /* PoseConfig.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		58B511D21A9E6C8500147676 = {
+			isa = PBXGroup;
+			children = (
+				1E3A68A527F1E04D00D7BD22 /* Pose */,
+				1E3A689B27F1E04D00D7BD22 /* TFL */,
+				1E3A689827F1DCE200D7BD22 /* Camera */,
+				F4FF95D6245B92E800C19C63 /* PoseDetectViewManager.swift */,
+				B3E7B5891CC2AC0600A0062D /* PoseDetectViewManager.m */,
+				F4FF95D5245B92E700C19C63 /* PoseDetect-Bridging-Header.h */,
+				134814211AA4EA7D00B7C361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B511DA1A9E6C8500147676 /* PoseDetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "PoseDetect" */;
+			buildPhases = (
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoseDetect;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libPoseDetect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B511D31A9E6C8500147676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "PoseDetect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B511DA1A9E6C8500147676 /* PoseDetect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B511D71A9E6C8500147676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3A68BD27F1E04D00D7BD22 /* CVPixelBuffer+TFLite.swift in Sources */,
+				1E3A68B527F1E04D00D7BD22 /* Interpreter.swift in Sources */,
+				1E3A68B227F1E04D00D7BD22 /* Delegate.swift in Sources */,
+				1E3A68B827F1E04D00D7BD22 /* MoveNet.swift in Sources */,
+				1E3A68AF27F1E04D00D7BD22 /* Model.swift in Sources */,
+				1E3A68BB27F1E04D00D7BD22 /* Data+TFLite.swift in Sources */,
+				1E3A68B727F1E04D00D7BD22 /* PoseEstimator.swift in Sources */,
+				1E3A68BC27F1E04D00D7BD22 /* CGSize+TFLite.swift in Sources */,
+				1E3A68B127F1E04D00D7BD22 /* TensorFlowLite.swift in Sources */,
+				1E3A68C027F22DCA00D7BD22 /* OverlayView.swift in Sources */,
+				1E3A68AE27F1E04D00D7BD22 /* QuantizationParameters.swift in Sources */,
+				1E3A68B427F1E04D00D7BD22 /* CoreMLDelegate.swift in Sources */,
+				1E3A68BA27F1E04D00D7BD22 /* PoseData.swift in Sources */,
+				1E3A68B027F1E04D00D7BD22 /* Tensor.swift in Sources */,
+				1E3A68B927F1E04D00D7BD22 /* PoseNet.swift in Sources */,
+				1E3A68BF27F22DC100D7BD22 /* PoseDetectViewManager.m in Sources */,
+				1E3A68C127F22DCD00D7BD22 /* CameraFeedManager.swift in Sources */,
+				1E3A68BE27F1E04D00D7BD22 /* PoseConfig.swift in Sources */,
+				1E3A68B327F1E04D00D7BD22 /* InterpreterError.swift in Sources */,
+				1E3A68B627F1E04D00D7BD22 /* MetalDelegate.swift in Sources */,
+				F4FF95D7245B92E800C19C63 /* PoseDetectViewManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58B511ED1A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.4]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B511EE1A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B511F01A9E6C8500147676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../example/ios/Pods/Headers/Public/React-Core",
+					"$(SRCROOT)/../example/ios/Pods/Headers/Public/Yoga",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PoseDetect;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PoseDetect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../example/ios/Pods/Headers/Public/React-Core",
+					"$(SRCROOT)/../example/ios/Pods/Headers/Public/Yoga",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = PoseDetect;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PoseDetect-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "PoseDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "PoseDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
+}

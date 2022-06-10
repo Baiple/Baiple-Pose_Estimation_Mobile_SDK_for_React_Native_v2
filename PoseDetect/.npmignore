@@ -1,0 +1,17 @@
+.DS_Store
+.git*
+.yarn*
+.circleci
+.husky
+.idea
+.gradle
+.editorconfig
+example
+build
+xcuserdata
+project.xcworkspace
+tsconfig.build.json
+__tests__
+local.properties
+CONTRIBUTING.md
+Makefile
